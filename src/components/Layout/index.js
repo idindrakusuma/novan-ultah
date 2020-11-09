@@ -9,7 +9,7 @@ import '@assets/css/style.css';
 import './assets/custom-styles.css';
 
 const TITLE = `Novan's Birthday Party`;
-const IMAGE_URL = `https://thekusuma.com/static/slide-6-4715e29302dbaa2ba21494c6258298d4.jpg`;
+const IMAGE_URL = `https://user-images.githubusercontent.com/10141928/98512914-a2b45500-2299-11eb-83fc-e92bd394a206.jpeg`;
 const META_DESCRIPTION = `Teman-teman dan sahabat-sahabat sekalian yang saya cintai. Pada kesempatan yang berbahgia ini, perkenankan saya mengajak teman-teman sekalian untuk memanjatkan puji syukur kepada Tuhan Yang Maha Kuasa, karena atas rahmat dan perkenan-Nya, kita semua dapat hadir dan berkumpul di tempat ini, dalam rangka memperingati acara ulang tahun yang ke 21.`;
 
 function MainLayout({ children }) {
