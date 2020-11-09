@@ -18,7 +18,12 @@ function WeddingSection({ isInvitation }) {
           </div>
           <div className="row">
             <div className="col-md-8 col-md-offset-4">
-              <WeddingInfoBox title="Akad Nikah" time="08.00 WIB (Live di Instagram)" date="Sabtu, 03 Oktober 2020" />
+              <WeddingInfoBox
+                title="Birthday Party"
+                time="20:00 - 23:00 WIB"
+                date="Selasa, 10 November 2020"
+                description="Cafe Monobar by Palette Coffe"
+              />
             </div>
           </div>
         </div>
