@@ -33,6 +33,7 @@ export const styWrapper = css`
 
   .main-font {
     margin-top: 12px;
+    font-family: var(--font-family-title);
 
     @media screen and (max-width: 400px) {
       line-height: 1;

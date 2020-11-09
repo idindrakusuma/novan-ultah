@@ -8,32 +8,36 @@ import '@assets/css/bootstrap.css';
 import '@assets/css/style.css';
 import './assets/custom-styles.css';
 
+const TITLE = `Novan's Birthday Party`;
 const IMAGE_URL = `https://thekusuma.com/static/slide-6-4715e29302dbaa2ba21494c6258298d4.jpg`;
-const META_DESCRIPTION = `Dengan memohon Rahmat dan Ridho Illahi, teriring niat menjalankan Sunnah Rasulullah ﷺ untuk membentuk rumah tangga yang Sakinah, Mawaddah wa Rahmah, kami mohon do'a agar senantiasa diberikan kelancaran dan keberkahan. - Dinda & Indra`;
+const META_DESCRIPTION = `Teman-teman dan sahabat-sahabat sekalian yang saya cintai. Pada kesempatan yang berbahgia ini, perkenankan saya mengajak teman-teman sekalian untuk memanjatkan puji syukur kepada Tuhan Yang Maha Kuasa, karena atas rahmat dan perkenan-Nya, kita semua dapat hadir dan berkumpul di tempat ini, dalam rangka memperingati acara ulang tahun yang ke 21.`;
 
 function MainLayout({ children }) {
   return (
     <Fragment>
       <Helmet>
-        <title>Dinda ❤️ Indra Wedding</title>
+        <title>{TITLE}</title>
 
         {/* Favicon */}
         <link rel="icon" type="image/png" href={Favicon} />
 
         {/* font and SEO tags */}
-        <meta property="og:title" content="The Wedding of Dinda & Indra" />
+        <meta property="og:title" content={TITLE} />
         <meta property="og:image" content={IMAGE_URL} />
-        <meta property="og:url" content="https://thekusuma.com" />
-        <meta property="og:site_name" content="The Wedding of Dinda & Indra" />
+        <meta property="og:url" content="https://indrakusuma.web.id" />
+        <meta property="og:site_name" content={TITLE} />
         <meta property="og:description" content={META_DESCRIPTION} />
-        <meta name="twitter:title" content="The Wedding of Dinda & Indra" />
+        <meta name="twitter:title" content={TITLE} />
         <meta name="twitter:description" content={META_DESCRIPTION} />
         <meta name="twitter:image" content={IMAGE_URL} />
-        <meta name="twitter:url" content="https://thekusuma.com" />
+        <meta name="twitter:url" content="https://indrakusuma.web.id" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:creator" content="@idindrakusuma" />
 
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;700&family=Paytone+One&display=swap" rel="stylesheet" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;700&family=Paytone+One&display=swap"
+          rel="stylesheet"
+        />
       </Helmet>
       <div id="page">{children}</div>
     </Fragment>

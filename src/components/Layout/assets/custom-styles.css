@@ -11,3 +11,8 @@
 body {
   font-family: var(--font-family-content);
 }
+
+.main-font {
+  font-family: var(--font-family-title);
+  color: var(--main-bg-color);
+}

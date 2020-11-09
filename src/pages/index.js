@@ -9,7 +9,6 @@ import WelcomeSection from '@components/WelcomeSection';
 import HelloSection from '@components/HelloSection';
 import WeddingSection from '@components/WeddingSection';
 import LocationSection from '@components/LocationSection';
-import StorySection from '@components/StorySection';
 import PhotoSection from '@components/PhotoSection/Loadable';
 import WishesSection from '@components/WishesSection';
 import ConfirmationSection from '@components/ConfirmationSection';
@@ -39,7 +38,6 @@ function Home({ location }) {
         <WeddingSection isInvitation={isInvitation} />
         {isInvitation && <CovidSection />}
         {isInvitation && <LocationSection />}
-        <StorySection />
         <PhotoSection />
         <WishesSection />
         <ConfirmationSection guestName={firstName} isInvitation={isInvitation} codeLink={finalTicketLink} />
