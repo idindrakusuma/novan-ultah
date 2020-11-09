@@ -1,0 +1,13 @@
+:root {
+  /* UI colors */
+  --font-white-ui: #ecf0f1;
+  --main-bg-color: #2c3e50;
+
+  /* font type variables */
+  --font-family-title: 'Paytone One', sans-serif;
+  --font-family-content: 'Noto Sans JP', sans-serif;
+}
+
+body {
+  font-family: var(--font-family-content);
+}

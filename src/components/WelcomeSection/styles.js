@@ -1,5 +1,5 @@
 import { css, keyframes } from '@emotion/core';
-import Background from '@assets/images/bg-welcome.jpg';
+import Background from './img/novan.jpeg';
 
 export const styHero = css`
   width: 100%;
@@ -123,7 +123,6 @@ export const styScrollWrapper = css`
 export const styBackground = css`
   background-size: cover;
   background-image: url(${Background});
-  background-position: center;
   width: 100%;
   height: 100%;
   display: flex;
@@ -142,7 +141,7 @@ export const styBackground = css`
 
   @media screen and (max-width: 500px) {
     .title {
-      font-size: 54px;
+      font-size: 30px;
     }
 
     .sub-title {
@@ -164,7 +163,7 @@ export const styWrapper = css`
     margin-bottom: 0px;
     font-size: 72px;
     line-height: 1.5;
-    font-family: 'Goldman', cursive;
+    font-family: var(--font-family-title);
     color: #fff;
   }
 
@@ -177,7 +176,7 @@ export const styWrapper = css`
   }
 
   h4 {
-    font-family: 'Goldman', cursive;
+    font-family: var(--font-family-content);
     margin: 0;
     color: #fff;
     font-size: 30px;
@@ -230,12 +229,13 @@ export const styWrapperCount = css`
   display: inline-block;
   width: 100px;
   height: 100px;
-  background: rgba(241, 78, 149, 0.8);
+  background: var(--main-bg-color);
   margin: 8px;
   border-radius: 50%;
   position: relative;
   animation: pulse 1s ease infinite;
   color: #fff;
+  border-radius: 14px 0;
 
   h3 {
     font-size: 30px;
