@@ -1,7 +1,6 @@
 import React from 'react';
 import useDateCountdown from '@/hooks/useDateCountdown';
 import CountItem from './CountItem';
-import ButtonLive from '../WeddingSection/ButtonLive';
 import { styMargin } from './styles';
 
 function CountContainer() {
@@ -10,14 +9,11 @@ function CountContainer() {
 
   if (timeHasRunOut)
     return (
-      <>
-        <div className="row">
-          <div className="col-md-12" style={{ fontSize: '20px' }}>
-            {`ACARA ${finalText} BERLANGSUNG!`}
-          </div>
+      <div className="row">
+        <div className="col-md-12" style={{ fontSize: '20px' }}>
+          {`ACARA ${finalText} BERLANGSUNG!`}
         </div>
-        <ButtonLive />
-      </>
+      </div>
     );
 
   return (
